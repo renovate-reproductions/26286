@@ -43,4 +43,4 @@ git push --tags
 git checkout "${curr_branch}" --quiet
 
 # diff
-open "https://github.com/${repo}/compare/v${curr_version}...v${next_version}?w=1" &>/dev/null
+open "https://github.com/${repo}/compare/${curr_version}...${next_version}?w=1" &>/dev/null
