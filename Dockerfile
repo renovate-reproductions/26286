@@ -18,8 +18,9 @@ RUN install-php-extensions pcntl
 RUN install-php-extensions pdo_mysql
 RUN install-php-extensions soap
 RUN install-php-extensions sockets
-RUN install-php-extensions zip
+RUN install-php-extensions uuid
 RUN install-php-extensions xsl
+RUN install-php-extensions zip
 
 RUN curl -L "https://download.newrelic.com/php_agent/release/newrelic-php5-10.11.0.3-linux.tar.gz" --output /tmp/newrelic.tar.gz && \
     cd /tmp && \
