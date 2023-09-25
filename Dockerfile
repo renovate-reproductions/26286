@@ -22,7 +22,7 @@ RUN install-php-extensions uuid
 RUN install-php-extensions xsl
 RUN install-php-extensions zip
 
-RUN curl -L "https://download.newrelic.com/php_agent/release/newrelic-php5-10.11.0.3-linux.tar.gz" --output /tmp/newrelic.tar.gz && \
+RUN curl -L "https://download.newrelic.com/php_agent/release/newrelic-php5-10.12.0.1-linux.tar.gz" --output /tmp/newrelic.tar.gz && \
     cd /tmp && \
     tar -xf newrelic.tar.gz && \
     cd newrelic-* && \
