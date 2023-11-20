@@ -2,6 +2,8 @@ FROM mlocati/php-extension-installer:2.1.65 as php_ext_installer
 
 FROM php:8.1.25-fpm
 
+RUN ln -sr /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
+
 COPY --from=php_ext_installer /usr/bin/install-php-extensions /usr/bin/
 RUN install-php-extensions apcu
 RUN install-php-extensions bcmath
