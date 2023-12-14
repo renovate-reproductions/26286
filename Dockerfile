@@ -1,6 +1,6 @@
 FROM mlocati/php-extension-installer:2.1.69 as php_ext_installer
 
-FROM php:8.1.26-fpm
+FROM php:8.3.0-fpm
 
 LABEL org.opencontainers.image.source="https://github.com/etrias-nl/php"
 
